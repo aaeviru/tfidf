@@ -6,10 +6,11 @@ import sys
 import math
 import re
 
-if len(sys.argv) != 4:
-    print "input:topic-folder,cl-flie,cl-folder"
+if len(sys.argv) != 5:
+    print "input:topic-folder,cl-flie,cl-folder,type[0/1]"
     sys.exit(1)
 
+type = int(sys.argv[4])
 fcl = open(sys.argv[2],'r')
 cll = {}
 for line in fcl:
@@ -35,7 +36,11 @@ for root, dirs, files in os.walk(sys.argv[1]):
             cl = cl[0] + str(int(cl[1:len(cl)-1])) +cl[len(cl)-1]
             w = set()
             fin  = open(filename+'.txt','r')
-            fcl = open(sys.argv[3]+'/'+cl[0]+'/'+cl+'.txt.fq.tfidfn')
+            if type == 0:
+		fcl = open(sys.argv[3]+'/'+cl[0]+'/'+cl+'.txt.fq.tfidfn')
+	    else:
+		fcl = open(sys.argv[3]+'/'+cl+'.txt')
+
             tmp = fcl.readlines()
             fcl.close()
             for line in fin:
@@ -48,7 +53,10 @@ for root, dirs, files in os.walk(sys.argv[1]):
                 tw = tmp[i].strip('\n')
                 r[i].append(tw)
             for tcl in cll[cl]:
-                fcl = open(sys.argv[3]+'/'+tcl[0]+'/'+tcl+'.txt.fq.tfidfn')
+                if type == 0:
+                    fcl = open(sys.argv[3]+'/'+tcl[0]+'/'+tcl+'.txt.fq.tfidfn')
+                else:
+                    fcl = open(sys.argv[3]+'/'+tcl+'.txt')
                 tmp = fcl.readlines()    
                 fcl.close()
                 for i in w:
