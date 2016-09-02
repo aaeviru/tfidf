@@ -20,14 +20,14 @@ for root, dirs, files in os.walk(sys.argv[1]):
             fin.close()
             if len(l) < 1000:
                 continue 
-            if type == 0:
+            if type == 0:#r3
                 cl = name[0:len(name)-13]
-            elif type == 1:
+            elif type == 1:#r2
                 cl = root[len(root)-1] + name[0:len(name)-10]
-            elif type == 2:
+            elif type == 2:#r1
                 cl = root[len(root)-1]
-            elif type == 3:
-                cl = name[0:len(name)-4]
+            elif type == 3:#lsa
+                cl = name
             if len(l) > last:
                 x[cl] = l[0:last]
             else:
@@ -69,6 +69,13 @@ def layout(c,y):
             z.append(w)
             for i in w:
                 cc.remove(i)
+    if len(cc) > 0:
+        w = []
+        for j in range(2):
+            for tt in cc:
+                w.append(tt)
+        print w
+        z.append(w)
     return z
 z = layout(c,y)
 y = {}

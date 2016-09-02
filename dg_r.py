@@ -5,6 +5,7 @@ import os
 import sys
 import math
 import re
+import numpy as np
 
 if len(sys.argv) != 5:
     print "input:topic-folder,cl-flie,cl-folder,type[0/1]"
@@ -33,7 +34,7 @@ for root, dirs, files in os.walk(sys.argv[1]):
                 break
             cl = cl[0]
             cl = cl[0] + str(int(cl[1:len(cl)-1])) +cl[len(cl)-1]
-            w = set()
+            w = []
             fin  = open(filename+'.txt','r')
             if type == 0:
 		fcl = open(sys.argv[3]+'/'+cl[0]+'/'+cl+'.txt.fq.tfidfn')
@@ -43,17 +44,19 @@ for root, dirs, files in os.walk(sys.argv[1]):
             tmp = fcl.readlines()
             fcl.close()
             for line in fin:
-                if line in tmp:
-                    w.add(tmp.index(line))
-            r = {}
+                if line in tmp[0:10000]:
+                    w.append(tmp.index(line))
+            r = []
             t = '!'
-            for i in w:
-                r[i] = []
-                tw = tmp[i].strip('\n')
-                r[i].append(tw)
+            rq = np.array(w)
+            mean = rq.mean()
+            std = rq.std()
+            #print mean,std
             if cl not in cll:
                 continue
             print '@'+filename
+            ttmmpp = list(tmp)
+            del tmp
             for tcl in cll[cl]:
                 if type == 0:
                     fcl = open(sys.argv[3]+'/'+tcl[0]+'/'+tcl+'.txt.fq.tfidfn')
@@ -61,13 +64,17 @@ for root, dirs, files in os.walk(sys.argv[1]):
                     fcl = open(sys.argv[3]+'/'+tcl+'.txt')
                 tmp = fcl.readlines()    
                 fcl.close()
-                for i in w:
+                dq = np.random.exponential(min(mean,std),abs(len(w)+np.random.normal(0,1,1)))
+             #   print dq.mean(),dq.std()
+              #  print dq
+                rr = []
+                for i in dq:
                     if i < len(tmp):
-                        r[i].append(tmp[i].strip('\n'))
-            for i in r:
-                if len(r[i]) == 4:
-                    for j in r[i]:
-                        print j
-                    t = t + r[i][0] + ' '
-                    print
+                        print tmp[int(i)].strip('\n')
+                print
+            for i in w:
+                tw = ttmmpp[i].strip('\n')
+                print tw
+                t = t + tw + ' '
+            print
             print t

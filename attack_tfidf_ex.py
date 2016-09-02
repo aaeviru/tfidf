@@ -62,7 +62,6 @@ def attack(fn):
         mmax_3 = vec.max()
         vec[vec.argmax()] = 0
         mmax_4 = vec.max()
-        vec = np.zeros(kk)
         aver1 = aver1 + mmax_1 / mmax_2
         aver2 = aver2 + mmax_2 / mmax_3
         aver3 = aver3 + mmax_3 / mmax_4
