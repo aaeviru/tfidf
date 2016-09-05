@@ -68,12 +68,11 @@ def layout(c,y):
         if check == 0 :
             z.append(w)
             for i in w:
-                cc.remove(i)
+                if i in cc:
+                    cc.remove(i)
     if len(cc) > 0:
-        w = []
-        for j in range(2):
-            for tt in cc:
-                w.append(tt)
+        for tt in cc:
+            w = (tt,tt)
         print w
         z.append(w)
     return z

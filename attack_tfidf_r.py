@@ -63,9 +63,10 @@ def attack(fn):
             for term in sq:
                 if term in wtol:
                     tmp = tmp + (s * a[:,wtol[term]])
-#                    print term,(s * a[:,wtol[term]])[mmax]
-#            print i,tmp[mmax],len(sq),vec[tmp.argmax()],tmp.argmax(),mmax
-#            raw_input()
+            for term in sq:
+                    print term,(s * a[:,wtol[term]])[mmax],a[:,wtol[term]][tmp.argmax()]
+            print i,tmp[mmax],len(sq),vec[tmp.argmax()],tmp.argmax(),tmp.max(),mmax
+            raw_input()
             if tmp[mmax] > check:
                 check = tmp[mmax]
                 checkp = i
