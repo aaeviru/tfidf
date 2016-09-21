@@ -27,7 +27,7 @@ for line in fwl:
     i = i + 1
 fwl.close()
 
-a = np.load('/home/ec2-user/data/classinfo/vt.npy')
+a = np.load('/home/ec2-user/data/classinfo/vt-tfidf.npy')
 #s = np.load('/home/ec2-user/data/classinfo/sigma.npy')
 kk = 623
 #s = 1 / s
@@ -35,7 +35,7 @@ kk = 623
 #a = s * a
 #del s
 lenth = len(a[0])
-outpt = '/home/ec2-user/data/lsaclass/'
+outpt = '/home/ec2-user/data/lsa+tfidf/'
 for i in range(0,kk):
     fout = open(outpt+str(i),'w')
     b = a[i].argsort()

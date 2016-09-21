@@ -7,8 +7,8 @@ from scipy import linalg as sclg
 from scipy.sparse import linalg
 from scipy import sparse as sp
 
-if len(sys.argv) != 2:
-    print "input: bk file\n"
+if len(sys.argv) != 3:
+    print "input: bk file,type[0/1]\n"
     exit(0)
 
 fwl = open("/home/ec2-user/git/statresult/wordslist_dsw.txt","r")
@@ -64,9 +64,11 @@ def attack(fn):
                 if term in wtol:
                     tmp = tmp + (s * a[:,wtol[term]])
             for term in sq:
+                if type == 1:
                     print term,(s * a[:,wtol[term]])[mmax],a[:,wtol[term]][tmp.argmax()]
-            print i,tmp[mmax],len(sq),vec[tmp.argmax()],tmp.argmax(),tmp.max(),mmax
-            raw_input()
+            if type == 1:
+                print i,tmp[mmax],len(sq),vec[tmp.argmax()],tmp.argmax(),tmp.max(),mmax
+                raw_input()
             if tmp[mmax] > check:
                 check = tmp[mmax]
                 checkp = i

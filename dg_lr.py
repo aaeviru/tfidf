@@ -7,13 +7,11 @@ import math
 import re
 import numpy as np
 
-if len(sys.argv) != 4:
-    print "input:topic-folder,cl-flie,cl-folder"
+if len(sys.argv) != 5:
+    print "input:topic-folder,cl-flie,cl-folder zipf-p"
     sys.exit(1)
 
-cll = {}
-for i in range(0,623):
-    cll[i] = np.random.randint(623,size=3)
+zipf = float(sys.argv[4])
 
 fwl = open("/home/ec2-user/git/statresult/wordslist_dsw.txt","r")
 wtol = {}
@@ -37,17 +35,21 @@ def classof(lines):
         vec = vec + a[:,wtol[line]]
     return vec.argmax()
 
-'''
-fcl = open(sys.argv[2],'r')
-cll = {}
-for line in fcl:
-    line = line.strip(' \n')
-    line = line.split(' ')
-    for w in line:
-        cll[w] = list(line)
-        cll[w].remove(w)
-fcl.close()
-'''
+if sys.argv[2] == 'rand':
+    cll = {}
+    for i in range(0,623):
+        cll[i] = np.random.randint(623,size=3)
+else:
+    fcl = open(sys.argv[2],'r')
+    cll = {}
+    for line in fcl:
+        line = line.strip(' \n')
+        line = line.split(' ')
+        for w in line:
+            cll[w] = list(line)
+            cll[w].remove(w)
+    fcl.close()
+
 for root, dirs, files in os.walk(sys.argv[1]):
     for name in files:
         filename = root + '/' + name
@@ -79,13 +81,15 @@ for root, dirs, files in os.walk(sys.argv[1]):
                 fcl = open(sys.argv[3]+'/'+str(tcl))
                 tmp = fcl.readlines()    
                 fcl.close()
-                dq = np.random.exponential(min(mean,std),abs(len(w)+np.random.normal(0,1,1)))
-             #   print dq.mean(),dq.std()
-              #  print dq
-                rr = []
-                for i in dq:
-                    if i < len(tmp):
-                        print tmp[int(i)].strip('\n')
+                rr =  set()
+                qlen = abs(len(w)+np.random.normal(0,2,1))
+                while len(rr) < qlen:
+                    dp = int(np.random.zipf(zpif,1))
+                    if dp < len(tmp) and dp not in rr:
+                        rr.add(dp)
+                        print tmp[int(dp)].strip('\n')
+                    else:
+                        continue
                 print
             for i in w:
                 tw = ttmmpp[i].strip('\n')

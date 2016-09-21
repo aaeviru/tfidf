@@ -8,19 +8,36 @@ import re
 import numpy as np
 
 if len(sys.argv) != 5:
-    print "input:topic-folder,cl-flie,cl-folder,type[0/1]"
+    print "input:topic-folder,cl-flie,cl-folder,zipf-k"
     sys.exit(1)
 
-type = int(sys.argv[4])
-fcl = open(sys.argv[2],'r')
-cll = {}
-for line in fcl:
-    line = line.strip(' \n')
-    line = line.split(' ')
-    for w in line:
-        cll[w] = list(line)
-        cll[w].remove(w)
-fcl.close()
+zipf = float(sys.argv[4])
+
+if sys.argv[2] == 'rand':
+    fcl = open('/home/ec2-user/git/tfidf/result/classname.txt','r')
+    cll = {}
+    acl = []
+    for line in fcl:
+        line = line.strip(' \n')
+        line = line.split(' ')
+        for w in line:
+            acl.append(w)
+    for i in range(0,623):
+        tmpc = []
+        for j in range(3):
+            tmpc.append(acl[np.random.randint(623)])
+        cll[acl[i]] = list(tmpc)
+else:
+    fcl = open(sys.argv[2],'r')
+    cll = {}
+    for line in fcl:
+        line = line.strip(' \n')
+        line = line.split(' ')
+        for w in line:
+            cll[w] = list(line)
+            cll[w].remove(w)
+    fcl.close()
+
 for root, dirs, files in os.walk(sys.argv[1]):
     for name in files:
         filename = root + '/' + name
@@ -36,16 +53,14 @@ for root, dirs, files in os.walk(sys.argv[1]):
             cl = cl[0] + str(int(cl[1:len(cl)-1])) +cl[len(cl)-1]
             w = []
             fin  = open(filename+'.txt','r')
-            if type == 0:
-		fcl = open(sys.argv[3]+'/'+cl[0]+'/'+cl+'.txt.fq.tfidfn')
-	    else:
-		fcl = open(sys.argv[3]+'/'+cl+'.txt')
+            fcl = open(sys.argv[3]+'/'+cl[0]+'/'+cl+'.txt.fq.tfidfn')
 
             tmp = fcl.readlines()
             fcl.close()
             for line in fin:
                 if line in tmp[0:10000]:
                     w.append(tmp.index(line))
+            fin.close()
             r = []
             t = '!'
             rq = np.array(w)
@@ -58,20 +73,22 @@ for root, dirs, files in os.walk(sys.argv[1]):
             ttmmpp = list(tmp)
             del tmp
             for tcl in cll[cl]:
-                if type == 0:
-                    fcl = open(sys.argv[3]+'/'+tcl[0]+'/'+tcl+'.txt.fq.tfidfn')
-                else:
-                    fcl = open(sys.argv[3]+'/'+tcl+'.txt')
+                fcl = open(sys.argv[3]+'/'+tcl[0]+'/'+tcl+'.txt.fq.tfidfn')
                 tmp = fcl.readlines()    
                 fcl.close()
-                dq = np.random.exponential(min(mean,std),abs(len(w)+np.random.normal(0,1,1)))
-             #   print dq.mean(),dq.std()
-              #  print dq
-                rr = []
-                for i in dq:
-                    if i < len(tmp):
-                        print tmp[int(i)].strip('\n')
+
+                rr =  set()
+                qlen = abs(len(w)+np.random.normal(0,2,1))
+                while len(rr) < qlen:
+                    print rr,len(tmp)
+                    dp = int(np.random.zipf(zipf,1))
+                    if dp < len(tmp) and dp not in rr:
+                        rr.add(dp)
+                        print tmp[int(dp)].strip('\n')
+                    else:
+                        continue
                 print
+
             for i in w:
                 tw = ttmmpp[i].strip('\n')
                 print tw
