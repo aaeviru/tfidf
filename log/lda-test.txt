@@ -1,0 +1,12 @@
+INFO:lda:n_documents: 623
+INFO:lda:vocab_size: 2973096
+INFO:lda:n_words: 847787139
+INFO:lda:n_topics: 623
+INFO:lda:n_iter: 10000
+WARNING:lda:all zero column in document-term matrix found
+INFO:lda:<0> log likelihood: -15527611064
+INFO:lda:<10> log likelihood: -12757762853
+INFO:lda:<20> log likelihood: -11228508646
+INFO:lda:<30> log likelihood: -10660094551
+INFO:lda:<40> log likelihood: -10414062840
+INFO:lda:<50> log likelihood: -10284501562

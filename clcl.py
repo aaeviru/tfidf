@@ -27,15 +27,15 @@ for line in fwl:
     i = i + 1
 fwl.close()
 
-a = np.load('/home/ec2-user/data/classinfo/vt-tfidf.npy')
+a = np.load('/home/ec2-user/data/classinfo/vt-1999B.npy')
 #s = np.load('/home/ec2-user/data/classinfo/sigma.npy')
-kk = 623
+kk = a.shape[0]
 #s = 1 / s
 #s = s.reshape(kk,1)
 #a = s * a
 #del s
 lenth = len(a[0])
-outpt = '/home/ec2-user/data/lsa+tfidf/'
+outpt = '/home/ec2-user/data/lsa-1999B/'
 for i in range(0,kk):
     fout = open(outpt+str(i),'w')
     b = a[i].argsort()

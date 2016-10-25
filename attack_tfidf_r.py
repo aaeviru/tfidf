@@ -10,7 +10,7 @@ from scipy import sparse as sp
 if len(sys.argv) != 3:
     print "input: bk file,type[0/1]\n"
     exit(0)
-
+type = int(sys.argv[2])
 fwl = open("/home/ec2-user/git/statresult/wordslist_dsw.txt","r")
 wtol = {}
 itow = {}
