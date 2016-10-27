@@ -7,11 +7,12 @@ import math
 import re
 import numpy as np
 
-if len(sys.argv) != 5:
-    print "input:topic-folder,cl-flie,cl-folder,zipf-k"
+if len(sys.argv) != 6:
+    print "input:topic-folder,cl-flie,cl-folder,zipf-k,type[1/2]"
     sys.exit(1)
 
 zipf = float(sys.argv[4])
+type = int(sys.argv[5])
 
 if sys.argv[2] == 'rand':
     fcl = open('/home/ec2-user/git/tfidf/result/classname.txt','r')
@@ -53,7 +54,10 @@ for root, dirs, files in os.walk(sys.argv[1]):
             cl = cl[0] + str(int(cl[1:len(cl)-1])) +cl[len(cl)-1]
             w = []
             fin  = open(filename+'.txt','r')
-            fcl = open(sys.argv[3]+'/'+cl[0]+'/'+cl+'.txt.fq.tfidfn')
+            clf = sys.argv[3]+'/'+cl[0]+'/'+cl+'.txt.fq.tfidfn'
+            if type == 2:
+                clf = clf + '2'
+            fcl = open(clf,'r')
 
             tmp = fcl.readlines()
             fcl.close()
@@ -73,14 +77,17 @@ for root, dirs, files in os.walk(sys.argv[1]):
             ttmmpp = list(tmp)
             del tmp
             for tcl in cll[cl]:
-                fcl = open(sys.argv[3]+'/'+tcl[0]+'/'+tcl+'.txt.fq.tfidfn')
+                clf = sys.argv[3]+'/'+cl[0]+'/'+cl+'.txt.fq.tfidfn'
+                if type == 2:
+                    clf = clf + '2'
+                fcl = open(clf,'r')
                 tmp = fcl.readlines()    
                 fcl.close()
 
                 rr =  set()
-                qlen = abs(len(w)+np.random.normal(0,2,1))
+                #qlen = abs(len(w)+np.random.normal(0,2,1))
+                qlen = len(w)
                 while len(rr) < qlen:
-                    print rr,len(tmp)
                     dp = int(np.random.zipf(zipf,1))
                     if dp < len(tmp) and dp not in rr:
                         rr.add(dp)

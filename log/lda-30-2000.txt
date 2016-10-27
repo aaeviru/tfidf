@@ -177,3 +177,4 @@ INFO:lda:<1690> log likelihood: -9933589052
 INFO:lda:<1700> log likelihood: -9933562894
 INFO:lda:<1710> log likelihood: -9933509052
 INFO:lda:<1720> log likelihood: -9933620152
+INFO:lda:<1730> log likelihood: -9933602485
