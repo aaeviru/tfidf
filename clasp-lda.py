@@ -10,7 +10,7 @@ if len(sys.argv) != 3:
     sys.exit(1)
 
 
-a = np.load('/home/ec2-user/data/classinfo/vt.npy')#lsa result
+a = np.load('/home/ec2-user/git/statresult/lda-30-2000-phi.npy')#lda-result
 kk = a.shape[0]
 wtol = readwl("/home/ec2-user/git/statresult/wordslist_dsw.txt")
 
@@ -25,6 +25,7 @@ for root, dirs, files in os.walk(sys.argv[1]):
         l = fin.readlines()
         fin.close()
         if len(l) < 1000:
+            print name
             continue 
         cl = name
         if len(l) > last:
@@ -71,9 +72,9 @@ def layout(c,y):
                 if i in cc:
                     cc.remove(i)
     if len(cc) > 0:
+        w = ()
         for tt in cc:
-            w = (tt,tt)
-        print w
+            w = w + (tt,tt)
         z.append(w)
     return z
 z = layout(c,y)

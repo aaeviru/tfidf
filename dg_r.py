@@ -6,11 +6,15 @@ import sys
 import math
 import re
 import numpy as np
+from os import path
+sys.path.append( path.dirname( path.dirname( path.abspath(__file__) ) ) )
+from pythonlib import semantic as sm
 
 if len(sys.argv) != 6:
     print "input:topic-folder,cl-flie,cl-folder,zipf-k,type[1/2]"
     sys.exit(1)
 
+clpath = sys.argv[3]
 zipf = float(sys.argv[4])
 type = int(sys.argv[5])
 
@@ -43,62 +47,13 @@ for root, dirs, files in os.walk(sys.argv[1]):
     for name in files:
         filename = root + '/' + name
         if name.isdigit():
-            fin = open(filename,'r')
-            temp = fin.read()
-            fin.close()
-            cl = re.findall(r'【国際特許分類第.*版】.*?([A-H][0-9]+?[A-Z])',temp,re.DOTALL)
-            if(len(cl) < 1):
-                print filename
-                break
-            cl = cl[0]
-            cl = cl[0] + str(int(cl[1:len(cl)-1])) +cl[len(cl)-1]
-            w = []
-            fin  = open(filename+'.txt','r')
-            clf = sys.argv[3]+'/'+cl[0]+'/'+cl+'.txt.fq.tfidfn'
-            if type == 2:
-                clf = clf + '2'
-            fcl = open(clf,'r')
-
-            tmp = fcl.readlines()
-            fcl.close()
-            for line in fin:
-                if line in tmp[0:10000]:
-                    w.append(tmp.index(line))
-            fin.close()
-            r = []
-            t = '!'
-            rq = np.array(w)
-            mean = rq.mean()
-            std = rq.std()
-            #print mean,std
-            if cl not in cll:
-                continue
-            print '@'+filename
-            ttmmpp = list(tmp)
-            del tmp
-            for tcl in cll[cl]:
-                clf = sys.argv[3]+'/'+cl[0]+'/'+cl+'.txt.fq.tfidfn'
-                if type == 2:
-                    clf = clf + '2'
-                fcl = open(clf,'r')
-                tmp = fcl.readlines()    
-                fcl.close()
-
-                rr =  set()
-                #qlen = abs(len(w)+np.random.normal(0,2,1))
-                qlen = len(w)
-                while len(rr) < qlen:
-                    dp = int(np.random.zipf(zipf,1))
-                    if dp < len(tmp) and dp not in rr:
-                        rr.add(dp)
-                        print tmp[int(dp)].strip('\n')
-                    else:
-                        continue
-                print
-
-            for i in w:
-                tw = ttmmpp[i].strip('\n')
-                print tw
-                t = t + tw + ' '
+            result = sm.dg2(filename,cll,clpath,zipf,type)
+        if result == None:
+            continue
+        print '@'+root+name
+        for i in range(0,len(result)-1):
+            for j in result[i]:
+                print j
             print
-            print t
+        print result[-1]
+
