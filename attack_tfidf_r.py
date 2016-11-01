@@ -7,6 +7,7 @@ from scipy import linalg as sclg
 from scipy.sparse import linalg
 from scipy import sparse as sp
 
+
 if len(sys.argv) != 3:
     print "input: bk file,type[0/1]\n"
     exit(0)
@@ -69,6 +70,7 @@ def attack(fn):
             if type == 1:
                 print i,tmp[mmax],len(sq),vec[tmp.argmax()],tmp.argmax(),tmp.max(),mmax
                 raw_input()
+            #tmp = tmp / nplg.norm(tmp)
             if tmp[mmax] > check:
                 check = tmp[mmax]
                 checkp = i
