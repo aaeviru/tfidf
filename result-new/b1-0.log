@@ -1,0 +1,6 @@
+Mon, 07 Nov 2016 05:24:52 +0000
+cl-folder:/home/ec2-user/data/classinfo
+type[0(tfidf)/1(tfidf2)/2(lsa)/3(lda)]:1
+dsfunc[0(far)/1(near)/2(cos-far)/3(cos-near)]:0
+output-folder:result-new/
+

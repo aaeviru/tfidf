@@ -1,0 +1,6 @@
+INFO:lda:n_documents: 623
+INFO:lda:vocab_size: 311111
+INFO:lda:n_words: 776306591
+INFO:lda:n_topics: 32
+INFO:lda:n_iter: 2000
+WARNING:lda:all zero column in document-term matrix found

@@ -1,0 +1,14 @@
+Fri, 11 Nov 2016 05:17:55 +0000
+topic-folder:/home/ec2-user/data/topics/
+cl-flie(rand for random):result-new/b0-0.txt
+cl-folder:/home/ec2-user/data/classinfo
+zipf-k(<=1 for non-random):0
+type[0(tfidf)/1(tfidf2)/2(lsa)/3(lda)]:0
+output-folder:result-new/
+
+Traceback (most recent call last):
+  File "dg_r.py", line 78, in <module>
+    result = sm.dg(filename,cll,clpath,a,s,wtol,kk,zipf,type)
+  File "/home/ec2-user/git/pythonlib/semantic.py", line 174, in dg
+    fcl = open(clf,'r')
+IOError: [Errno 2] No such file or directory: '/home/ec2-user/data/classinfo/f/fq.txt.tfidf.txt.fq.tfidfn'

@@ -1,8 +1,0 @@
-Wed, 02 Nov 2016 08:00:24 +0000
-topic-folder:/home/ec2-user/data/topics/
-cl-flie(rand for random):rand
-cl-folder:/home/ec2-user/data/ldaclass/
-zipf-k(<=1 for non-random):1.03
-type[0(tfidf)/1(tfidf2)/2(lsa)/3(lda)]:3
-output-folder:result-new/
-

@@ -45,8 +45,10 @@ query = []
 rquery = []
 sq = []
 qqq = {}
+mqqq = {}
 for i in range(4):
     qqq[i] = 0
+    mqqq[i] = 0
 def attack(fn):
     global vec,aver1,aver2,aver3,aver4,qch,query,rquery,bk,total,hit,a,maxnum,maxnum_1,totalterm
     if vec.max() < 0.0000000000001:
@@ -59,6 +61,7 @@ def attack(fn):
         check = -1
         checkp = -1
         i = 0
+        mt = []
         for sq in query:
             tmp = np.zeros(kk)
             for term in sq:
@@ -71,10 +74,12 @@ def attack(fn):
                 print i,tmp[mmax],len(sq),vec[tmp.argmax()],tmp.argmax(),tmp.max(),mmax
                 raw_input()
             #tmp = tmp / nplg.norm(tmp)
+            mt.append(tmp.max())
             if tmp[mmax] > check:
                 check = tmp[mmax]
                 checkp = i
             i = i + 1
+        mqqq[np.array(mt).argmax()] = mqqq[np.array(mt).argmax()] +1
         qqq[checkp] = qqq[checkp] + 1
         vec = np.zeros(kk)
 #    print len(tt),len(rquery)
@@ -105,3 +110,4 @@ attack('end')
 print "total:",total
 for i in range(0,4):
     print str(i)+':'+str(qqq[i]),1.0*qqq[i]/total
+    print 'mqqq'+str(i)+':'+str(qqq[i]),1.0*qqq[i]/total

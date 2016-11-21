@@ -1,10 +1,6 @@
-Wed, 02 Nov 2016 11:50:07 +0000
+Thu, 10 Nov 2016 04:18:14 +0000
 cl-folder:/home/ec2-user/data/lsaclass/
 type[0(tfidf)/1(tfidf2)/2(lsa)/3(lda)]:2
 dsfunc[0(far)/1(near)/2(cos-far)/3(cos-near)]:0
 output-folder:result-new/
 
-Traceback (most recent call last):
-  File "clasp.py", line 25, in <module>
-    a = np.load('/home/ec2-user/data/classinfo/vt.npy')#lsa result
-NameError: name 'np' is not defined

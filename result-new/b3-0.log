@@ -1,0 +1,6 @@
+Mon, 14 Nov 2016 09:18:56 +0000
+cl-folder:/home/ec2-user/data/ldaclass-32-1000-top10000/
+type[0(tfidf)/1(tfidf2)/2(lsa)/3(lda)]:3
+dsfunc[0(far)/1(near)/2(cos-far)/3(cos-near)]:0
+output-folder:result-new/
+

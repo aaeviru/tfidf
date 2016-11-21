@@ -11,7 +11,7 @@ sys.path.append( path.dirname( path.dirname( path.abspath(__file__) ) ) )
 from pythonlib import semantic as sm
 from pythonlib import sysf
 
-inputform = "topic-folder,cl-flie(rand for random),cl-folder,zipf-k(<=1 for non-random),type[0(tfidf)/1(tfidf2)/2(lsa)/3(lda)],output-folder"
+inputform = "topic-folder,cl-flie(rand for random),cl-folder,zipf-k(<=1 for non-random,<0 for ldarand type3 only),type[0(tfidf)/1(tfidf2)/2(lsa)/3(lda)],output-folder"
 if len(sys.argv) != 7:
     print "input:"+inputform
     sys.exit(1)
@@ -28,12 +28,34 @@ if type == 2:
     a = np.load('/home/ec2-user/data/classinfo/vt.npy')#lsa result
     s = None
 if type == 3:
-    a = np.load('/home/ec2-user/git/statresult/lda-30-2000-phi.npy')
-    s = np.load('/home/ec2-user/git/statresult/lda-30-2000-pz.npy')
+    #a = np.load('/home/ec2-user/git/statresult/lda-30-2000-phi.npy')
+    #s = np.load('/home/ec2-user/git/statresult/lda-30-2000-pz.npy')
+    a = np.load('/home/ec2-user/git/statresult/lda-32-1000-top10000-phi.npy')
+    s = np.load('/home/ec2-user/git/statresult/lda-32-1000-top10000-pz.npy')
 
-if type in (2,3):
+if type == 2:
     wtol = sm.readwl("/home/ec2-user/git/statresult/wordslist_dsw.txt")
     kk = a.shape[0]
+elif type == 3:
+    wtol = sm.readwl("/home/ec2-user/git/statresult/wordslist_top10000_dsw.txt")
+    kk = a.shape[0]
+    if zipf < 0:
+        fldawl = open('/home/ec2-user/git/statresult/wordslist_top10000_dsw.txt','r')#wordlist for lda
+        i = 0
+        ltow = {}
+        for line in fldawl:
+            line = line.strip('\n')
+            ltow[i] = line
+            i = i + 1
+        fldawl.close()
+        p = []
+        p.append(a[:,0])
+        for i in range(1,a.shape[1]):
+            p.append(a[:,i]+p[i-1])
+        p = np.array(p)
+        p = p.transpose()
+
+
 elif type in (0,1):
     a = None
     s = None
@@ -66,15 +88,20 @@ else:
         line = line.strip(' \n')
         line = line.split(' ')
         for w in line:
-            cll[w] = list(line)
-            cll[w].remove(w)
+            ww = int(w)
+            cll[ww] = list(line)
+            cll[ww].remove(w)
     fcl.close()
 
 for root, dirs, files in os.walk(sys.argv[1]):
     for name in files:
         filename = root + '/' + name
+        result = None
         if name.isdigit():
-            result = sm.dg(filename,cll,clpath,a,s,wtol,kk,zipf,type)
+            if type == 3 and zipf < 0:
+                result = sm.dg3(filename,cll,a,s,p,wtol,ltow,kk)
+            else:
+                result = sm.dg(filename,cll,clpath,a,s,wtol,kk,zipf,type)
         if result == None:
             continue
         fout.write('@'+root+name+'\n')

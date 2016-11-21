@@ -1,6 +1,6 @@
-Thu, 10 Nov 2016 11:48:15 +0000
+Sun, 13 Nov 2016 07:55:57 +0000
 cl-folder:/home/ec2-user/data/lsaclass/
 type[0(tfidf)/1(tfidf2)/2(lsa)/3(lda)]:2
-dsfunc[0(far)/1(near)/2(cos-far)/3(cos-near)]:1
+dsfunc[0(far)/1(near)/2(cos-far)/3(cos-near)]:2
 output-folder:result-new/
 

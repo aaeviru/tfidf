@@ -16,7 +16,8 @@ from scipy import sparse as sp
 #        break
 #    cll.append(line[33:lenth-4])
 
-fwl = open("/home/ec2-user/git/statresult/wordslist_dsw.txt","r")
+#fwl = open("/home/ec2-user/git/statresult/wordslist_dsw.txt","r")
+fwl = open("/home/ec2-user/git/statresult/wordslist_top10000_dsw.txt","r")
 wtol = {}
 itow = {}
 i = 0
@@ -27,7 +28,8 @@ for line in fwl:
     i = i + 1
 fwl.close()
 
-a = np.load('/home/ec2-user/git/statresult/lda-30-2000-phi.npy')
+#a = np.load('/home/ec2-user/git/statresult/lda-30-2000-phi.npy')
+a = np.load('/home/ec2-user/git/statresult/lda-32-1000-top10000-phi.npy')
 #s = np.load('/home/ec2-user/data/classinfo/sigma.npy')
 kk = a.shape[0]
 #s = 1 / s
@@ -35,7 +37,7 @@ kk = a.shape[0]
 #a = s * a
 #del s
 lenth = len(a[0])
-outpt = '/home/ec2-user/data/ldaclass/'
+outpt = '/home/ec2-user/data/ldaclass-32-1000-top10000/'
 for i in range(0,kk):
     fout = open(outpt+str(i),'w')
     b = a[i].argsort()

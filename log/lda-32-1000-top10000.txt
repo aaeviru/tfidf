@@ -1,0 +1,157 @@
+INFO:lda:n_documents: 623
+INFO:lda:vocab_size: 311111
+INFO:lda:n_words: 776306591
+INFO:lda:n_topics: 32
+INFO:lda:n_iter: 1000
+WARNING:lda:all zero column in document-term matrix found
+INFO:lda:<0> log likelihood: -11129736133
+INFO:lda:<10> log likelihood: -10074737522
+INFO:lda:<20> log likelihood: -9398887540
+INFO:lda:<30> log likelihood: -9192107667
+INFO:lda:<40> log likelihood: -9115884570
+INFO:lda:<50> log likelihood: -9075766601
+INFO:lda:<60> log likelihood: -9049808567
+INFO:lda:<70> log likelihood: -9031296674
+INFO:lda:<80> log likelihood: -9016985841
+INFO:lda:<90> log likelihood: -9005507109
+INFO:lda:<100> log likelihood: -8996190001
+INFO:lda:<110> log likelihood: -8988493600
+INFO:lda:<120> log likelihood: -8981602103
+INFO:lda:<130> log likelihood: -8975580599
+INFO:lda:<140> log likelihood: -8970429118
+INFO:lda:<150> log likelihood: -8965814041
+INFO:lda:<160> log likelihood: -8961699421
+INFO:lda:<170> log likelihood: -8957827878
+INFO:lda:<180> log likelihood: -8954363715
+INFO:lda:<190> log likelihood: -8951095722
+INFO:lda:<200> log likelihood: -8948130469
+INFO:lda:<210> log likelihood: -8945559188
+INFO:lda:<220> log likelihood: -8942933312
+INFO:lda:<230> log likelihood: -8940521331
+INFO:lda:<240> log likelihood: -8937967861
+INFO:lda:<250> log likelihood: -8935611376
+INFO:lda:<260> log likelihood: -8933634346
+INFO:lda:<270> log likelihood: -8931641752
+INFO:lda:<280> log likelihood: -8929614900
+INFO:lda:<290> log likelihood: -8927765627
+INFO:lda:<300> log likelihood: -8925930803
+INFO:lda:<310> log likelihood: -8924148805
+INFO:lda:<320> log likelihood: -8922425266
+INFO:lda:<330> log likelihood: -8920878464
+INFO:lda:<340> log likelihood: -8919226406
+INFO:lda:<350> log likelihood: -8917616812
+INFO:lda:<360> log likelihood: -8916225692
+INFO:lda:<370> log likelihood: -8914814973
+INFO:lda:<380> log likelihood: -8913373229
+INFO:lda:<390> log likelihood: -8912044570
+INFO:lda:<400> log likelihood: -8910759272
+INFO:lda:<410> log likelihood: -8909487136
+INFO:lda:<420> log likelihood: -8908236567
+INFO:lda:<430> log likelihood: -8907115350
+INFO:lda:<440> log likelihood: -8905836915
+INFO:lda:<450> log likelihood: -8904545129
+INFO:lda:<460> log likelihood: -8903240101
+INFO:lda:<470> log likelihood: -8901957031
+INFO:lda:<480> log likelihood: -8900807164
+INFO:lda:<490> log likelihood: -8899854975
+INFO:lda:<500> log likelihood: -8898835984
+INFO:lda:<510> log likelihood: -8897636098
+INFO:lda:<520> log likelihood: -8896596019
+INFO:lda:<530> log likelihood: -8895395534
+INFO:lda:<540> log likelihood: -8894244967
+INFO:lda:<550> log likelihood: -8893248649
+INFO:lda:<560> log likelihood: -8892342717
+INFO:lda:<570> log likelihood: -8891400549
+INFO:lda:<580> log likelihood: -8890491993
+INFO:lda:<590> log likelihood: -8889721229
+INFO:lda:<600> log likelihood: -8888974184
+INFO:lda:<610> log likelihood: -8888187736
+INFO:lda:<620> log likelihood: -8887478269
+INFO:lda:<630> log likelihood: -8886902884
+INFO:lda:<640> log likelihood: -8886261282
+INFO:lda:<650> log likelihood: -8885604753
+INFO:lda:<660> log likelihood: -8884886340
+INFO:lda:<670> log likelihood: -8884264538
+INFO:lda:<680> log likelihood: -8883762789
+INFO:lda:<690> log likelihood: -8883263048
+INFO:lda:<700> log likelihood: -8882600514
+INFO:lda:<710> log likelihood: -8882132033
+INFO:lda:<720> log likelihood: -8881658342
+INFO:lda:<730> log likelihood: -8881057228
+INFO:lda:<740> log likelihood: -8880512034
+INFO:lda:<750> log likelihood: -8880255754
+INFO:lda:<760> log likelihood: -8879820805
+INFO:lda:<770> log likelihood: -8879354204
+INFO:lda:<780> log likelihood: -8878901347
+INFO:lda:<790> log likelihood: -8878390024
+INFO:lda:<800> log likelihood: -8877959126
+INFO:lda:<810> log likelihood: -8877694898
+INFO:lda:<820> log likelihood: -8877144566
+INFO:lda:<830> log likelihood: -8876902404
+INFO:lda:<840> log likelihood: -8876472235
+INFO:lda:<850> log likelihood: -8876126509
+INFO:lda:<860> log likelihood: -8875738985
+INFO:lda:<870> log likelihood: -8875351134
+INFO:lda:<880> log likelihood: -8875023475
+INFO:lda:<890> log likelihood: -8874693663
+INFO:lda:<900> log likelihood: -8874272070
+INFO:lda:<910> log likelihood: -8873933329
+INFO:lda:<920> log likelihood: -8873592149
+INFO:lda:<930> log likelihood: -8873401608
+INFO:lda:<940> log likelihood: -8873118564
+INFO:lda:<950> log likelihood: -8872835328
+INFO:lda:<960> log likelihood: -8872495637
+INFO:lda:<970> log likelihood: -8872076210
+INFO:lda:<980> log likelihood: -8871770972
+INFO:lda:<990> log likelihood: -8871486526
+INFO:lda:<999> log likelihood: -8871137501
+Topic 0: スロットルセンサ ユニシアジェックス 本田技研工業 踏込み トルクコンバータ ウォータポンプ 南青山 フェイル
+Topic 1: 前輪 操舵 操縦 車軸 荷台 乗降 発進 搭乗
+Topic 2: 患 感染 マッサージ 痛 炎症 心臓 鼻 腸
+Topic 3: バーモント 瑞原 DQ ＴＭＲ ウェハプロセス クトホール ＭＲＡＭ Semiconductor
+Topic 4: につれて 損 排除 にかけて 始め 接する 後者 隙
+Topic 5: Ａｕｄｉｏ Block Set マルチメディ トストリーム デス スイッチャ Coding
+Topic 6: デザイン 図柄 装飾 飾 着用 ミシン 飾り 衣服
+Topic 7: 換気扇 臭い 消灯 蛇口 受皿 漏電 食器 臭
+Topic 8: ビームスプリッ 明光 アライメントマーク トプコン ロイックミラー プリズ 絵素 ダイクロイッ
+Topic 9: 風味 調味 脂質 酵母 砂糖 芽 汁 果実
+Topic 10: mgKOH アルキルビニルエーテル メチルジメトキシシラン ブチルパーオキサイド イソシアナ ノルボル ジイソシ 千種海岸
+Topic 11: アルコ メチ アルコキシ ｔｅｒｔ フェニル グリコ イソプロピル ヒドロキシル
+Topic 12: プラセオジム ＮａＦ ルゴン ｒＯ ＭｏＯ CuO ランタニド ネオジウム
+Topic 13: neat ｄｄｄ ｂｓ グリニャール ジフルオ Ｐｈｅ トリフルオロエトキシ ジフルオロメチル
+Topic 14: 用 記載 量 問題 乾燥 時 提供 混合
+Topic 15: 焼戻し 浸炭 時効 Mo 鍛 冶金 鋳鉄 ＨＩＰ
+Topic 16: スルファモイル ベンゾグアナミン アゾメチン ジアゾニウム ナフトキノンジアジド アルキルスルホニル ｄｐｉ ジアセトンアルコール
+Topic 17: コマンド アドレス プロセッサ 命令 メッセージ 乗算 許可 クロック
+Topic 18: 精算 現金 発券 貸出 票 プリペイドカード 景品 出庫
+Topic 19: 鉄筋 コンクリートブロック 鉄筋コンクリート 家屋 改修 角材 大林組 根太
+Topic 20: 南巨摩 増穂 ＲＤＨ ステープルモード キャリッジモータ 三田工業 ダイアログボックス メンバーシップ
+Topic 21: 排ガス エゼクタ 石川島播磨重工業 タービン ボイラ ディフューザ タービ バッフル
+Topic 22: グリッパ 刃先 ターレット ストッカ 繰出 ジョー マガジン バキューム
+Topic 23: 電場 ＳｉＯ タンタル ＴｉＯ 主面 ウエハ スパッタ 電材
+Topic 24: エミッ ＦＥＴＱ ポーラ オペアン ＯＳＣ コンダクタンス ＰＭＯＳ ｎｐｎ
+Topic 25: 焼却灰 サイロ 消石灰 ブロワー 埋め立て スクリューコンベヤ 埋立 高炉
+Topic 26: gene kbp ECOLI USA pir クレオチド XhoI ベクタ
+Topic 27: 製織 経糸 紡 紡績 織り 横糸 撚り 緯糸
+Topic 28: 有する 更に それ あ 軸 等 側 利用
+Topic 29: トランク バンパー 通行 ルーバ 落合 トリム ピラー 主部
+Topic 30: ルゴリズム 教師 求まっ ナビゲーション データベー プロジェクタ ＤＳＰ 写像
+Topic 31: 外向 ブッシ 食い込ま 打ち抜か インサ ンサート 鋲 シメ
+[[  1.39409827e-06   4.49564098e-10   4.49564098e-10 ...,   6.59515028e-05
+    3.77678799e-06   4.49564098e-10]
+ [  3.26115292e-10   3.26115292e-10   3.26115292e-10 ...,   4.35693291e-05
+    3.26115292e-10   3.26115292e-10]
+ [  1.70313529e-06   7.40171789e-10   1.62911811e-06 ...,   3.83416389e-05
+    7.40171789e-10   7.40171789e-10]
+ ..., 
+ [  2.52640963e-06   8.41855924e-10   8.41855924e-10 ...,   6.04460972e-05
+    2.44988493e-05   5.05955410e-07]
+ [  1.28439130e-06   3.56676285e-10   4.64035847e-07 ...,   4.41925484e-05
+    3.56676285e-10   3.56676285e-10]
+ [  6.14046009e-06   5.11662369e-10   5.11662369e-10 ...,   7.27589005e-05
+    5.11662369e-10   5.11662369e-10]]
+[22240658 30660891 13507266 10455379 93220952 25210306 20667009 24497253
+ 20830827 16029039 34579698 30021397 20899303 19390933 27756660 15151218
+ 18288603 30029215 17652957 22267729 13789656 16247733 21508928 31462065
+ 22875338 17191452 20569818 15123234 44731125 11875406 28033516 19541027]
+running time: 308404.38

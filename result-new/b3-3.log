@@ -1,0 +1,12 @@
+Mon, 14 Nov 2016 09:20:06 +0000
+cl-folder:/home/ec2-user/data/ldaclass-32-1000-top10000/
+type[0(tfidf)/1(tfidf2)/2(lsa)/3(lda)]:3
+dsfunc[0(far)/1(near)/2(cos-far)/3(cos-near)]:3
+output-folder:result-new/
+
+/home/ec2-user/git/pythonlib/semantic.py:42: RuntimeWarning: overflow encountered in multiply
+  vec = vec * a[:,wtol[line]] * 62300
+/usr/lib64/python2.7/dist-packages/numpy/linalg/linalg.py:1973: RuntimeWarning: overflow encountered in multiply
+  return sqrt(add.reduce((x.conj() * x).ravel().real))
+/usr/lib64/python2.7/dist-packages/scipy/spatial/distance.py:287: RuntimeWarning: invalid value encountered in double_scalars
+  dist = 1.0 - np.dot(u, v) / (norm(u) * norm(v))

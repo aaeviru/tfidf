@@ -24,11 +24,11 @@ last = 1000
 
 if type == 2:
     a = np.load('/home/ec2-user/data/classinfo/vt.npy')#lsa result
+    s = None
 if type == 3:
-    a = np.load('/home/ec2-user/git/statresult/lda-30-2000-phi.npy')
-    s = np.load('/home/ec2-user/git/statresult/lda-30-2000-pz.npy')
+    a = np.load('/home/ec2-user/git/statresult/lda-32-1000-top10000-phi.npy')
+    s = np.load('/home/ec2-user/git/statresult/lda-32-1000-top10000-pz.npy')
 if type in (2,3):
-    last = last * 1000
     kk = a.shape[0]
     wtol = sm.readwl("/home/ec2-user/git/statresult/wordslist_dsw.txt")
 
@@ -36,7 +36,7 @@ if type in (2,3):
 for root, dirs, files in os.walk(sys.argv[1]):
     for name in files:
         filename = root + '/' + name
-        if (type == 0 and filename[-1] == 'n') or (type == 1 and filename[-1] == '2') or type in (2,3):
+        if (type == 0 and filename[-1] == 'n' and name[0] >= 'A' and name[0] <= 'H') or (type == 1 and filename[-1] == '2') or type in (2,3):
             fin = open(filename,"r")
             l = fin.readlines()
             fin.close()
