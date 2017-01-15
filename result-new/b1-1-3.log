@@ -1,0 +1,8 @@
+2017-01-11 01:58:53.615917
+
+cl-folder:/home/ec2-user/data/classinfo/
+stype[num of lsa classes][0(tfidf)/1(tfidf2)/2(lsa)/3(lda)]:1
+dsfunc[0(far)/1(near)/2(cos-far)/3(cos-near)]:1
+level[1(4)/2(8)...]:3
+output-folder:result-new/
+

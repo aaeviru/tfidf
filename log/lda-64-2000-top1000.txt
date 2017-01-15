@@ -1,0 +1,292 @@
+INFO:lda:n_documents: 623
+INFO:lda:vocab_size: 32524
+INFO:lda:n_words: 527159737
+INFO:lda:n_topics: 64
+INFO:lda:n_iter: 2000
+INFO:lda:<0> log likelihood: -7339157012
+INFO:lda:<10> log likelihood: -6911703861
+INFO:lda:<20> log likelihood: -6420054171
+INFO:lda:<30> log likelihood: -6171159351
+INFO:lda:<40> log likelihood: -6056593835
+INFO:lda:<50> log likelihood: -5997605441
+INFO:lda:<60> log likelihood: -5962480401
+INFO:lda:<70> log likelihood: -5939234129
+INFO:lda:<80> log likelihood: -5922486518
+INFO:lda:<90> log likelihood: -5909508688
+INFO:lda:<100> log likelihood: -5899111328
+INFO:lda:<110> log likelihood: -5890594002
+INFO:lda:<120> log likelihood: -5883369782
+INFO:lda:<130> log likelihood: -5877135384
+INFO:lda:<140> log likelihood: -5871689372
+INFO:lda:<150> log likelihood: -5866912991
+INFO:lda:<160> log likelihood: -5862635703
+INFO:lda:<170> log likelihood: -5858796511
+INFO:lda:<180> log likelihood: -5855315141
+INFO:lda:<190> log likelihood: -5852039657
+INFO:lda:<200> log likelihood: -5848982945
+INFO:lda:<210> log likelihood: -5846069090
+INFO:lda:<220> log likelihood: -5843546219
+INFO:lda:<230> log likelihood: -5840783443
+INFO:lda:<240> log likelihood: -5838325827
+INFO:lda:<250> log likelihood: -5835993566
+INFO:lda:<260> log likelihood: -5833840169
+INFO:lda:<270> log likelihood: -5831884258
+INFO:lda:<280> log likelihood: -5829882004
+INFO:lda:<290> log likelihood: -5828234199
+INFO:lda:<300> log likelihood: -5826648269
+INFO:lda:<310> log likelihood: -5824890941
+INFO:lda:<320> log likelihood: -5823486253
+INFO:lda:<330> log likelihood: -5821950340
+INFO:lda:<340> log likelihood: -5820551239
+INFO:lda:<350> log likelihood: -5819165951
+INFO:lda:<360> log likelihood: -5817692433
+INFO:lda:<370> log likelihood: -5816551268
+INFO:lda:<380> log likelihood: -5815304497
+INFO:lda:<390> log likelihood: -5814083143
+INFO:lda:<400> log likelihood: -5813041981
+INFO:lda:<410> log likelihood: -5811651814
+INFO:lda:<420> log likelihood: -5810703530
+INFO:lda:<430> log likelihood: -5809718149
+INFO:lda:<440> log likelihood: -5808627264
+INFO:lda:<450> log likelihood: -5807611526
+INFO:lda:<460> log likelihood: -5806561420
+INFO:lda:<470> log likelihood: -5805582233
+INFO:lda:<480> log likelihood: -5804586079
+INFO:lda:<490> log likelihood: -5803672784
+INFO:lda:<500> log likelihood: -5802889792
+INFO:lda:<510> log likelihood: -5802008329
+INFO:lda:<520> log likelihood: -5801084643
+INFO:lda:<530> log likelihood: -5800179994
+INFO:lda:<540> log likelihood: -5799359552
+INFO:lda:<550> log likelihood: -5798487678
+INFO:lda:<560> log likelihood: -5797675287
+INFO:lda:<570> log likelihood: -5796996276
+INFO:lda:<580> log likelihood: -5796155941
+INFO:lda:<590> log likelihood: -5795350882
+INFO:lda:<600> log likelihood: -5794640783
+INFO:lda:<610> log likelihood: -5793881004
+INFO:lda:<620> log likelihood: -5793246828
+INFO:lda:<630> log likelihood: -5792574590
+INFO:lda:<640> log likelihood: -5791769056
+INFO:lda:<650> log likelihood: -5791049523
+INFO:lda:<660> log likelihood: -5790496705
+INFO:lda:<670> log likelihood: -5789753832
+INFO:lda:<680> log likelihood: -5789103939
+INFO:lda:<690> log likelihood: -5788405788
+INFO:lda:<700> log likelihood: -5787843743
+INFO:lda:<710> log likelihood: -5787187627
+INFO:lda:<720> log likelihood: -5786636554
+INFO:lda:<730> log likelihood: -5786029710
+INFO:lda:<740> log likelihood: -5785446801
+INFO:lda:<750> log likelihood: -5784910242
+INFO:lda:<760> log likelihood: -5784390166
+INFO:lda:<770> log likelihood: -5783676534
+INFO:lda:<780> log likelihood: -5783183252
+INFO:lda:<790> log likelihood: -5782614462
+INFO:lda:<800> log likelihood: -5782190696
+INFO:lda:<810> log likelihood: -5781686926
+INFO:lda:<820> log likelihood: -5781310704
+INFO:lda:<830> log likelihood: -5780802013
+INFO:lda:<840> log likelihood: -5780366728
+INFO:lda:<850> log likelihood: -5779725196
+INFO:lda:<860> log likelihood: -5779337905
+INFO:lda:<870> log likelihood: -5778946924
+INFO:lda:<880> log likelihood: -5778527818
+INFO:lda:<890> log likelihood: -5778055283
+INFO:lda:<900> log likelihood: -5777815411
+INFO:lda:<910> log likelihood: -5777427237
+INFO:lda:<920> log likelihood: -5776875708
+INFO:lda:<930> log likelihood: -5776531987
+INFO:lda:<940> log likelihood: -5776093513
+INFO:lda:<950> log likelihood: -5775622936
+INFO:lda:<960> log likelihood: -5775212701
+INFO:lda:<970> log likelihood: -5774814124
+INFO:lda:<980> log likelihood: -5774530474
+INFO:lda:<990> log likelihood: -5774262039
+INFO:lda:<1000> log likelihood: -5773961785
+INFO:lda:<1010> log likelihood: -5773613972
+INFO:lda:<1020> log likelihood: -5773313366
+INFO:lda:<1030> log likelihood: -5773086545
+INFO:lda:<1040> log likelihood: -5772673988
+INFO:lda:<1050> log likelihood: -5772236173
+INFO:lda:<1060> log likelihood: -5772120266
+INFO:lda:<1070> log likelihood: -5771747612
+INFO:lda:<1080> log likelihood: -5771328938
+INFO:lda:<1090> log likelihood: -5771193097
+INFO:lda:<1100> log likelihood: -5770901969
+INFO:lda:<1110> log likelihood: -5770620848
+INFO:lda:<1120> log likelihood: -5770400516
+INFO:lda:<1130> log likelihood: -5770188784
+INFO:lda:<1140> log likelihood: -5769924504
+INFO:lda:<1150> log likelihood: -5769758781
+INFO:lda:<1160> log likelihood: -5769356839
+INFO:lda:<1170> log likelihood: -5769144289
+INFO:lda:<1180> log likelihood: -5768875211
+INFO:lda:<1190> log likelihood: -5768766587
+INFO:lda:<1200> log likelihood: -5768471648
+INFO:lda:<1210> log likelihood: -5768313897
+INFO:lda:<1220> log likelihood: -5768165051
+INFO:lda:<1230> log likelihood: -5767939000
+INFO:lda:<1240> log likelihood: -5767710116
+INFO:lda:<1250> log likelihood: -5767446491
+INFO:lda:<1260> log likelihood: -5767286624
+INFO:lda:<1270> log likelihood: -5767195887
+INFO:lda:<1280> log likelihood: -5766888170
+INFO:lda:<1290> log likelihood: -5766650583
+INFO:lda:<1300> log likelihood: -5766435788
+INFO:lda:<1310> log likelihood: -5766297920
+INFO:lda:<1320> log likelihood: -5766133898
+INFO:lda:<1330> log likelihood: -5765875549
+INFO:lda:<1340> log likelihood: -5765703751
+INFO:lda:<1350> log likelihood: -5765574228
+INFO:lda:<1360> log likelihood: -5765277470
+INFO:lda:<1370> log likelihood: -5765087872
+INFO:lda:<1380> log likelihood: -5764910525
+INFO:lda:<1390> log likelihood: -5764631250
+INFO:lda:<1400> log likelihood: -5764481996
+INFO:lda:<1410> log likelihood: -5764276005
+INFO:lda:<1420> log likelihood: -5764086697
+INFO:lda:<1430> log likelihood: -5763886830
+INFO:lda:<1440> log likelihood: -5763707233
+INFO:lda:<1450> log likelihood: -5763486401
+INFO:lda:<1460> log likelihood: -5763299822
+INFO:lda:<1470> log likelihood: -5763170702
+INFO:lda:<1480> log likelihood: -5762871982
+INFO:lda:<1490> log likelihood: -5762803054
+INFO:lda:<1500> log likelihood: -5762681074
+INFO:lda:<1510> log likelihood: -5762530954
+INFO:lda:<1520> log likelihood: -5762329314
+INFO:lda:<1530> log likelihood: -5762096952
+INFO:lda:<1540> log likelihood: -5762059003
+INFO:lda:<1550> log likelihood: -5761893976
+INFO:lda:<1560> log likelihood: -5761745439
+INFO:lda:<1570> log likelihood: -5761466781
+INFO:lda:<1580> log likelihood: -5761352580
+INFO:lda:<1590> log likelihood: -5761250610
+INFO:lda:<1600> log likelihood: -5761048518
+INFO:lda:<1610> log likelihood: -5760787958
+INFO:lda:<1620> log likelihood: -5760640566
+INFO:lda:<1630> log likelihood: -5760356296
+INFO:lda:<1640> log likelihood: -5760283379
+INFO:lda:<1650> log likelihood: -5760098754
+INFO:lda:<1660> log likelihood: -5759878332
+INFO:lda:<1670> log likelihood: -5759654398
+INFO:lda:<1680> log likelihood: -5759523018
+INFO:lda:<1690> log likelihood: -5759283008
+INFO:lda:<1700> log likelihood: -5759093595
+INFO:lda:<1710> log likelihood: -5759021760
+INFO:lda:<1720> log likelihood: -5758862049
+INFO:lda:<1730> log likelihood: -5758741553
+INFO:lda:<1740> log likelihood: -5758527918
+INFO:lda:<1750> log likelihood: -5758377356
+INFO:lda:<1760> log likelihood: -5758248780
+INFO:lda:<1770> log likelihood: -5758108150
+INFO:lda:<1780> log likelihood: -5757998511
+INFO:lda:<1790> log likelihood: -5757721103
+INFO:lda:<1800> log likelihood: -5757717056
+INFO:lda:<1810> log likelihood: -5757533606
+INFO:lda:<1820> log likelihood: -5757373731
+INFO:lda:<1830> log likelihood: -5757123053
+INFO:lda:<1840> log likelihood: -5757052019
+INFO:lda:<1850> log likelihood: -5756998882
+INFO:lda:<1860> log likelihood: -5756842922
+INFO:lda:<1870> log likelihood: -5756747620
+INFO:lda:<1880> log likelihood: -5756573259
+INFO:lda:<1890> log likelihood: -5756413314
+INFO:lda:<1900> log likelihood: -5756290002
+INFO:lda:<1910> log likelihood: -5756195382
+INFO:lda:<1920> log likelihood: -5756135425
+INFO:lda:<1930> log likelihood: -5756001829
+INFO:lda:<1940> log likelihood: -5755881253
+INFO:lda:<1950> log likelihood: -5755717989
+INFO:lda:<1960> log likelihood: -5755534605
+INFO:lda:<1970> log likelihood: -5755405358
+INFO:lda:<1980> log likelihood: -5755114561
+INFO:lda:<1990> log likelihood: -5754977815
+INFO:lda:<1999> log likelihood: -5754878254
+Topic 0: コンクリート 地面 クレーン 工事 地上 牽引 構築 鉄道
+Topic 1: 噛み合う オーブン 外乱 縮め 動かさ 凹ん ヒート シワ
+Topic 2: スロットルセンサ イグニッション 失火 PF フューエルカット PB イグニションスイッチ スタータスイッチ
+Topic 3: 折り曲げ 突出し 嵌入 器具 辺 舌 付ける 紐
+Topic 4: 連立 sinθ ΔＸ Δｆ 収録 cosθ リファレンス キャリブレーション
+Topic 5: 養分 育苗 農薬 堆肥 施肥 木酢 農作物 栽培
+Topic 6: 風味 食する 肉類 調味 料理 ドリップ 惣菜 食べる
+Topic 7: 穀物 ンベヤ 果実 機外 農産物 篩 ベヤ シュータ
+Topic 8: 明るく 明るい 明る 直射 ホログラム 視界 光ファイバー グローブ
+Topic 9: パルプ 用紙 クラフト 叩 製紙 故紙 ルプ 掻き
+Topic 10: フェニルアミノ ピラゾール スルファモイル ジスルホン タロシアニン アニリノ ジアゾニウム アルキルスルホニル
+Topic 11: ミスタ フェライト 新十余二 ロコ 刺激 シーズヒータ フォトカプラ 受
+Topic 12: アクチュエータ ブラケット リンク 伴っ 腕 駆 離れ 減速
+Topic 13: クーラント ワークホルダ グラインダ コレットチャック タレット ＣＮＣ インゴット 創成
+Topic 14: 腕時計 楽音 ムーブメント ゼンマイ 分針 鳴 脈拍 磁極
+Topic 15: ウエハ 電界 デバイス 現像 レジスト 細線 フォトレジスト 石英
+Topic 16: ジルコニウム マンガン ＳｉＣ 炭 試作 サンド 埋める 融解
+Topic 17: 絵素 光合成 投写 ＸＹθ 素行 モアレ モア フレネル
+Topic 18: 水溶液 分子 水溶 エステル 原料 炭酸 濃度 イオン
+Topic 19: ＳＯｘ 深海 質物 バイオリアクター リアクター 三井造船 離水 膏
+Topic 20: ｏｗｆ デニ 海島 捺染 ヨコ 紡 デニー フィラメン
+Topic 21: コークス 焼却灰 石灰石 消石灰 製鉄 埋め立て ＣａＯ 有価
+Topic 22: ガスタービ ＮＯｘ イラ 石川島播磨重工業 ガスタ エゼクタ 火力 マニホールド
+Topic 23: γ線 核分裂 ＭｅＶ 原子核 ガンマ線 中性子 加速器 線量
+Topic 24: 裏地 縫製 ホック 縫い 表地 布帛 身頃 腰部
+Topic 25: ｍＴｏｒｒ ＲＩＥ オングストローム サセプタ Ｅｕ ＳｉＮ ｓｃｃｍ ＮａＦ
+Topic 26: 音程 音階 低音 演奏 臨場 鍵盤 テンポ 音色
+Topic 27: 抗原 Leu Lys Glu Phe Ile Asn 皮下
+Topic 28: 性 側 部 目的 有する 軸 記載 あ
+Topic 29: 鍛 棒鋼 Mo mass 焼戻し 浸炭 肌荒れ 時効
+Topic 30: ヒートパイプ 編組線 布線 住友電装 インシュレータ 締める 鍍金 浮島
+Topic 31: 緯糸 撚り 経糸 編 編成 織り 製織 編み
+Topic 32: マッサージ 鼻 炎症 患 血管 感染 口腔 麻酔
+Topic 33: 下館 プラスチゾル フロントガラス はく離 レトルト ロールコータ 瀝青 プリプレグシート
+Topic 34: 木質 廃材 合板 木材 建材 反り 木目 家具
+Topic 35: 原稿 封筒 スタック ジャム バーコード 刷 郵便 罫
+Topic 36: オリフィ ニップル リフィス バタフライ フィス パイプライン 注油 パージ
+Topic 37: ダブ ステータ 気筒 ペダル 漏 ハウジン すべり ベーン
+Topic 38: 間仕切り 家具 掛け金 折りたたみ 間口 机 引っ掛ける ロッカー
+Topic 39: 待機 溜 給水 噴 吹き出し ベア 浄 自重
+Topic 40: list エキスパート GPS プリミティブ 平文 新譜 在室 ドラマ
+Topic 41: 彫刻 図柄 光輝 筆 有色 顔 飾 銀色
+Topic 42: 燃料 ヒータ 排ガス 燃焼 タービン プラント バルブ 発電
+Topic 43: ＡＧＣ つくる IP PD ＡＬＵ 冗 クサ フェー
+Topic 44: 点火 火薬 爆発 薬 発射 着火 砲 弾丸
+Topic 45: 回生 リアクトル Ｖd 蓄電器 スイッチングレギュレータ Ｒｒ Ｖｐ ツェナー
+Topic 46: 船体 浮力 舵 艇 浮体 海上 航 係留
+Topic 47: 直線 深 硬化 効 及 作る 部品 要する
+Topic 48: 徴収 支払う 精算 従業 決済 署 閲覧 プリペイドカード
+Topic 49: 垂木 ベランダ バルコニー 葺き 敷き詰め 野地 笠木 小屋
+Topic 50: ＶＣＯ ランジスタ 表さ ルタ ＩＲ キャパシタ スペクトラム ＮＰＮ
+Topic 51: 制止 コーダ アクチュエ 引込み 消磁 掻き ミット 移動子
+Topic 52: 重機 コンクリートブロック 開削 岩盤 盛土 築造 グラウト 矢板
+Topic 53: プロゲステロン KIAA カクテル 豆粕 甘 TYR 梢 欠乏症
+Topic 54: 風味 調味 色調 飲食 汁 搾 香り 牛乳
+Topic 55: アルコ アルキ ｔｅｒｔ メチ アルコキシ エチルヘキシル イソプロピル アルデヒド
+Topic 56: 一番 しき 関し 無効 ただ 定常 言え 流通
+Topic 57: ファイル エリア 属性 音声 ＲＡＭ コマンド キーボード メッセージ
+Topic 58: アンチ クラッシュ 日産自動車 ＲＲ ロアアーム 南船場 トヨタ自動車 光洋精工
+Topic 59: 面取り 駒 異形 楔 山形 噛み合う 振れ 山部
+Topic 60: 溜る トカバー ステツプ 弛ま バックラッシ スキマ 釈放 橋架
+Topic 61: 吸い込ま 活性炭 脱臭 浄水 送水 水路 繁殖 原水
+Topic 62: 四輪 ミッション アクセル スロットル ステアリング 坂道 操舵 握っ
+Topic 63: 夏期 蓄冷 ルーバ 熱熱 雪 不凍液 ＣＯＰ 製氷
+[[  3.95793941e-10   3.95793941e-10   3.95793941e-10 ...,   3.95793941e-10
+    1.43281365e-05   3.95793941e-10]
+ [  6.29923552e-10   8.30875464e-05   6.29923552e-10 ...,   6.29923552e-10
+    1.86332017e-04   7.74868961e-06]
+ [  1.51396323e-09   8.29666989e-05   4.33008623e-05 ...,   1.51396323e-09
+    1.21572761e-04   1.51396323e-09]
+ ..., 
+ [  9.94649458e-10   9.94649458e-10   9.94649458e-10 ...,   9.94649458e-10
+    9.94649458e-10   9.94649458e-10]
+ [  1.41843625e-09   2.68511400e-04   1.41843625e-09 ...,   1.41843625e-09
+    1.41843625e-09   1.41843625e-09]
+ [  2.98894577e-09   2.30749602e-04   3.82614948e-05 ...,   2.98894577e-09
+    1.00132672e-04   2.98894577e-09]]
+[25265347 15874617  6604855 25669919  9329548  5698575  4186504  4649079
+  4828893  2928187 11803567  5754878 11573230  5854160  3180784  7337605
+ 12876411  8505190 10763379  5088742  5538552  6451556  4746364  2954633
+  5248855  7795353  4733210  8662863  9058337  5503735  6161743  4332088
+  5303126  9353247  4444600  5346593  5202217  6054963  6986968 11088976
+  5628045  5403265  9224812  9355137  2112155  6306944  3823420 21013832
+ 11003711  6645737  6540263  8551090  6698639  6132147  7029624 18540466
+ 19049294 11682865  6345824 17297178  5585344 10053468  7049692  3345336]
+running time: 792066.17

@@ -1,0 +1,156 @@
+INFO:lda:n_documents: 623
+INFO:lda:vocab_size: 32524
+INFO:lda:n_words: 527159737
+INFO:lda:n_topics: 32
+INFO:lda:n_iter: 1000
+INFO:lda:<0> log likelihood: -6968021861
+INFO:lda:<10> log likelihood: -6623363131
+INFO:lda:<20> log likelihood: -6176674869
+INFO:lda:<30> log likelihood: -5983579286
+INFO:lda:<40> log likelihood: -5907874274
+INFO:lda:<50> log likelihood: -5870592533
+INFO:lda:<60> log likelihood: -5848692900
+INFO:lda:<70> log likelihood: -5833659319
+INFO:lda:<80> log likelihood: -5822562899
+INFO:lda:<90> log likelihood: -5813896978
+INFO:lda:<100> log likelihood: -5806951511
+INFO:lda:<110> log likelihood: -5801284049
+INFO:lda:<120> log likelihood: -5796396407
+INFO:lda:<130> log likelihood: -5791896245
+INFO:lda:<140> log likelihood: -5788375545
+INFO:lda:<150> log likelihood: -5784977417
+INFO:lda:<160> log likelihood: -5782052325
+INFO:lda:<170> log likelihood: -5779250050
+INFO:lda:<180> log likelihood: -5776682697
+INFO:lda:<190> log likelihood: -5774152313
+INFO:lda:<200> log likelihood: -5771998948
+INFO:lda:<210> log likelihood: -5769870126
+INFO:lda:<220> log likelihood: -5768027729
+INFO:lda:<230> log likelihood: -5766188990
+INFO:lda:<240> log likelihood: -5764234580
+INFO:lda:<250> log likelihood: -5762445836
+INFO:lda:<260> log likelihood: -5760736696
+INFO:lda:<270> log likelihood: -5759200941
+INFO:lda:<280> log likelihood: -5757660729
+INFO:lda:<290> log likelihood: -5756083548
+INFO:lda:<300> log likelihood: -5754793300
+INFO:lda:<310> log likelihood: -5753552893
+INFO:lda:<320> log likelihood: -5752424580
+INFO:lda:<330> log likelihood: -5751175927
+INFO:lda:<340> log likelihood: -5749973097
+INFO:lda:<350> log likelihood: -5748940145
+INFO:lda:<360> log likelihood: -5747977420
+INFO:lda:<370> log likelihood: -5746852595
+INFO:lda:<380> log likelihood: -5745788312
+INFO:lda:<390> log likelihood: -5744874478
+INFO:lda:<400> log likelihood: -5743941282
+INFO:lda:<410> log likelihood: -5743089711
+INFO:lda:<420> log likelihood: -5742136019
+INFO:lda:<430> log likelihood: -5741269667
+INFO:lda:<440> log likelihood: -5740516532
+INFO:lda:<450> log likelihood: -5739699438
+INFO:lda:<460> log likelihood: -5738847370
+INFO:lda:<470> log likelihood: -5738107138
+INFO:lda:<480> log likelihood: -5737368013
+INFO:lda:<490> log likelihood: -5736626432
+INFO:lda:<500> log likelihood: -5735912141
+INFO:lda:<510> log likelihood: -5735299705
+INFO:lda:<520> log likelihood: -5734665533
+INFO:lda:<530> log likelihood: -5733945240
+INFO:lda:<540> log likelihood: -5733184909
+INFO:lda:<550> log likelihood: -5732715992
+INFO:lda:<560> log likelihood: -5732104799
+INFO:lda:<570> log likelihood: -5731435200
+INFO:lda:<580> log likelihood: -5730820724
+INFO:lda:<590> log likelihood: -5730134365
+INFO:lda:<600> log likelihood: -5729465294
+INFO:lda:<610> log likelihood: -5728959256
+INFO:lda:<620> log likelihood: -5728556061
+INFO:lda:<630> log likelihood: -5728089268
+INFO:lda:<640> log likelihood: -5727614480
+INFO:lda:<650> log likelihood: -5727034504
+INFO:lda:<660> log likelihood: -5726595354
+INFO:lda:<670> log likelihood: -5726106298
+INFO:lda:<680> log likelihood: -5725680638
+INFO:lda:<690> log likelihood: -5725206608
+INFO:lda:<700> log likelihood: -5724843658
+INFO:lda:<710> log likelihood: -5724428938
+INFO:lda:<720> log likelihood: -5723925152
+INFO:lda:<730> log likelihood: -5723589910
+INFO:lda:<740> log likelihood: -5723259785
+INFO:lda:<750> log likelihood: -5722837739
+INFO:lda:<760> log likelihood: -5722527270
+INFO:lda:<770> log likelihood: -5722125834
+INFO:lda:<780> log likelihood: -5721883127
+INFO:lda:<790> log likelihood: -5721615841
+INFO:lda:<800> log likelihood: -5721335012
+INFO:lda:<810> log likelihood: -5721071773
+INFO:lda:<820> log likelihood: -5720728929
+INFO:lda:<830> log likelihood: -5720533033
+INFO:lda:<840> log likelihood: -5720321515
+INFO:lda:<850> log likelihood: -5720108506
+INFO:lda:<860> log likelihood: -5720037628
+INFO:lda:<870> log likelihood: -5719835873
+INFO:lda:<880> log likelihood: -5719559166
+INFO:lda:<890> log likelihood: -5719374527
+INFO:lda:<900> log likelihood: -5719130108
+INFO:lda:<910> log likelihood: -5719043453
+INFO:lda:<920> log likelihood: -5718700602
+INFO:lda:<930> log likelihood: -5718599959
+INFO:lda:<940> log likelihood: -5718381959
+INFO:lda:<950> log likelihood: -5718081201
+INFO:lda:<960> log likelihood: -5717950443
+INFO:lda:<970> log likelihood: -5717737789
+INFO:lda:<980> log likelihood: -5717676251
+INFO:lda:<990> log likelihood: -5717518879
+INFO:lda:<999> log likelihood: -5717347939
+Topic 0: 大林組 鉄筋コンクリート 改修 鉄筋 モルタル コンクリートブロック 工期 清水建設
+Topic 1: 飛行 爆発 航空機 地表 船 海面 海上 浮力
+Topic 2: Ｃｕ ケイ素 ＳｉＯ 元素 アルミナ コバルト タングステン 電界
+Topic 3: 背中 腹部 手首 胸部 皮膚 マッサージ 子供 違和感
+Topic 4: 周縁 可塑 屈曲 作る 付ける ポリ 樹 薄く
+Topic 5: 発話 歌詞 曲目 テンポ 生徒 字幕 母音 ＫＣ
+Topic 6: ツール 砥石 刃先 工作 鍛造 スプライン 面取り 仕上げる
+Topic 7: 蛇口 湯水 出水 満水 焚き 風呂 水口 原水
+Topic 8: アセトキシ ピラゾール 硅酸 ジメチルフェニル エピハロヒドリン ナフサ グラフトコポリマー ナフタレンスルホン
+Topic 9: 水溶 ｐＨ 濁 水溶液 水酸化 凝集 希釈 カリウム
+Topic 10: 風味 調味 バター 嗜好 牛乳 煎 香味 甘味
+Topic 11: アドレス プロセッサ 命令 乗算 情 定義 検索 最終
+Topic 12: フープ ジカルボン タルク 打ち抜か 包み込む 打ち抜く ニトリルゴム モジュラ
+Topic 13: Ile Glu 抗原 ヌクレオチド Ala 赤血球 Lys 皮下
+Topic 14: 性 目的 部 あ 該 側 記載 なく
+Topic 15: 八幡製鐵所 水島川崎通 製鋼 飛幡 日新製鋼 鋳鉄 製鉄 mass
+Topic 16: 経糸 製織 緯糸 撚り 織り 撚 紡 紡績
+Topic 17: 揺 他端 右 ねじ 後方 後端 リンク バネ
+Topic 18: 入場 精算 乗車 当日 告知 曜日 集計 配信
+Topic 19: ベヤ ンベヤ 籾 穀物 ふるい ブロワー 篩 ベアー
+Topic 20: 色収差 解像力 ＤＭＤ 虚像 絵素 実像 瞳 ｆθ
+Topic 21: グリッパ アラーム アクチ センタリング 移動子 Δｘ 動かさ 微動
+Topic 22: 限る まっ 換え 接す 共用 押す 直結 向か
+Topic 23: 排ガス タービン 液化 発電 ボイラ 石炭 プラント 冷媒
+Topic 24: Ｖｔｈ Ｖｐ インピーダ インピー ンピーダンス Ｖcc 寄生 Ｖｆ
+Topic 25: 飾 染料 図柄 パルプ スチレン インキ 木目 艶
+Topic 26: ＭｎＯ ヒ素 ＲＩＥ 砒素 ＮｉＯ ターゲ Ｅｕ ＳｉＮ
+Topic 27: ｔｅｒｔ メチ アルコ アルキ コハク イソプロピル メトキシ メチルエチルケトン
+Topic 28: バーコード 票 伝票 注文 読み取ら 原稿 先頭 封筒
+Topic 29: 車台 操舵 乗降 荷台 前輪 車輛 停車 踏み
+Topic 30: 目隠し 面壁 ファスナー 間仕切り 引っ掛ける 家具 庇 額縁
+Topic 31: ディーゼルエンジン ユニシアジェックス エアクリーナ 馬力 本田技研工業 ターボチャージャ トルクコンバータ スタータモータ
+[[  5.27552442e-07   8.01216428e-05   4.39260984e-10 ...,   4.39260984e-10
+    9.93612739e-05   1.62570490e-06]
+ [  7.47717933e-10   2.22222517e-04   7.47717933e-10 ...,   7.47717933e-10
+    9.57153726e-06   7.47717933e-10]
+ [  2.57164161e-10   1.38200277e-04   2.57164161e-10 ...,   2.57164161e-10
+    2.57164161e-10   2.57164161e-10]
+ ..., 
+ [  7.34312933e-10   1.14920708e-04   2.57082958e-06 ...,   7.34312933e-10
+    7.34312933e-10   7.34312933e-10]
+ [  6.22800687e-10   6.22800687e-10   6.22800687e-10 ...,   6.22800687e-10
+    9.85276915e-05   8.09703173e-06]
+ [  6.70759271e-10   4.84965661e-05   1.54952099e-05 ...,   6.70759271e-10
+    9.88035114e-05   6.70759271e-10]]
+[22765184 13373702 38885342 10968874 39449475 13962291 11646028 12348801
+ 19601309 13718426  7759642 19797124 11277942 13530052 10819680  8791921
+  8713683 19400140 12528831  9689526 12328120 16614133 34295105 20994912
+ 19545995 11046935 11787842 26070635 10865911 13617847 16056176 14908153]
+running time: 210949.12

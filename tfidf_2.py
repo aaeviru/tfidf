@@ -18,9 +18,9 @@ fidf.close()
 for root, dirs, files in os.walk(sys.argv[1]):
     for name in files:
         filename = root + '/' + name
-        if filename[len(filename)-1] == 'q':
+        if filename[len(filename)-1] == 'q' or name == "fq.txt":
             fin = open(filename,'r')
-            fout = open(filename+".tfidfn2","w")
+            fout = open(filename+".tfidfn3","w")
             tfidf = {}
             for line in fin:
                 line = line.strip("\n")

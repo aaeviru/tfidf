@@ -21,7 +21,7 @@ for line in fwl:
     i = i + 1
 fwl.close()
 
-ftp = open("/home/ec2-user/git/statresult/wordslist_top10000_dsw.txt","r")#word with top tfdif
+ftp = open("/home/ec2-user/git/statresult/wordslist_dsw_top1000.txt","r")#word with top tfdif
 topw = []
 for line in ftp:
     line = line.strip('\n')
@@ -41,7 +41,7 @@ for i, topic_dist in enumerate(topic_word):
     topic_words = np.array(vocab)[np.argsort(topic_dist)][:-(n_top_words+1):-1]
     print('Topic {}: {}'.format(i, ' '.join(topic_words)))
 print model.components_
-np.save("lda-"+str(kk)+"-"+str(nn)+"-phi.npy",model.components_)
-np.save("lda-"+str(kk)+"-"+str(nn)+"-theta.npy",model.doc_topic_)
+np.save("lda-"+str(kk)+"-"+str(nn)+"-top1000-phi.npy",model.components_)
+np.save("lda-"+str(kk)+"-"+str(nn)+"-top1000-theta.npy",model.doc_topic_)
 print model.nz_
 print "running time:",end-start

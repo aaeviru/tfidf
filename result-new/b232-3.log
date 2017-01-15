@@ -1,6 +1,7 @@
-2016-12-12 13:40:11.040015
+2016-12-14 17:24:04.696692
+
 cl-folder:/home/ec2-user/data/lsaclass/
-type[0(tfidf)/1(tfidf2)/2(lsa)/3(lda)]:2
+stype[num of lsa classes][0(tfidf)/1(tfidf2)/2(lsa)/3(lda)]:232
 dsfunc[0(far)/1(near)/2(cos-far)/3(cos-near)]:3
 output-folder:result-new/
 

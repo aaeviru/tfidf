@@ -1,8 +1,0 @@
-Fri, 11 Nov 2016 05:18:09 +0000
-topic-folder:/home/ec2-user/data/topics/
-cl-flie(rand for random):result-new/b1-1.txt
-cl-folder:/home/ec2-user/data/classinfo
-zipf-k(<=1 for non-random):0
-type[0(tfidf)/1(tfidf2)/2(lsa)/3(lda)]:1
-output-folder:result-new/
-
